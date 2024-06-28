@@ -8,6 +8,7 @@ Team Mates:
 1.Nurizzati Insyirah Binti Mohd Nazim 2227224
 2.Nurlyana Izzati Binti Rahmat 2227066
 3.Maria Wardah Binti Mohd Ghazali 2218014
+4. ali
 
 ## Rules
 1. You are allowed to have **3 group** members. *Exception* is allowed **IFF (if and only if)** you are allowed to have 4 group members if you are a **multinational** or a **multigender** group. 
@@ -24,8 +25,13 @@ Team Mates:
 
 ***Questions:***
 
-1. What is the link of the fork OSProject in your repository. ***(1 mark)*** https://github.com/insyirahnazim/OSProject
-2. How many files and folders are in this repository. ***(1 mark)*** files:2 folders:2 
+1. What is the link of the fork OSProject in your repository. ***(1 mark)*** 
+- https://github.com/insyirahnazim/OSProject
+- https://github.com/nurlyanana/OSProject 
+
+2. How many files and folders are in this repository. ***(1 mark)*** 
+- files:2 
+- folders:2 
 
 
 ## Exploring github codespaces
