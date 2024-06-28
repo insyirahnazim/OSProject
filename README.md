@@ -8,7 +8,7 @@ Team Mates:
 1.Nurizzati Insyirah Binti Mohd Nazim 2227224
 2.Nurlyana Izzati Binti Rahmat 2227066
 3.Maria Wardah Binti Mohd Ghazali 2218014
-4. ali
+
 ## Rules
 1. You are allowed to have **3 group** members. *Exception* is allowed **IFF (if and only if)** you are allowed to have 4 group members if you are a **multinational** or a **multigender** group. 
 2. When you complete the project, make sure to submit the repository link of your cloned project. Make sure all the files are as what you aspect in your repository. 
