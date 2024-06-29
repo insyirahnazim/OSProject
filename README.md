@@ -486,8 +486,13 @@ docker run -itd --net rednet --name c2 busybox sh
 ```
 ***Questions:***
 
-1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** __Fill answer here__.
-2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** __Fill answer here__.
+1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** 
+BusyBox:
+BusyBox is a software suite that provides several Unix utilities in a single executable file. It combines tiny versions of many common UNIX utilities into a single small executable, providing a minimalist but functional set of commands for systems with limited resources.
+
+Command switch --name:
+The --name switch in Docker is used to assign a custom name to a container. By default, Docker assigns a random name to containers, but using the --name switch allows you to specify a more meaningful and easily identifiable name for your container. .
+2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** 
 ![output terminal](image.png)
 3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)*** "172.18.0.1" and "172.19.0.1".
 4. What is the network address for the running container c1 and c2? ***(1 mark)***  "172.18.0.2" and "172.19.0.2".
