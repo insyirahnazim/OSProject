@@ -658,7 +658,17 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 1. What is the output of step 5 above, explain the error? ***(1 mark)*** ![test setup](image-3.png)  
 
  occurs in web development and indicates that the server cannot fulfill an HTTP GET request for a specific path or resource. 
-2. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
+
+
+2. Show the instruction needed to make this work. ***(1 mark)*** 
+
+Specify the Page:
+When accessing your server via a web browser, make sure you include a specific page name in the URL. For example, use http://localhost:8180/index.html instead of just http://localhost:8180.
+Check the Path:
+Verify that the path to your static files (like index.html) is correctly configured. Ensure that the file exists in the specified directory (e.g., /public).
+Update Your Code:
+If you’re using the connect module, ensure that you’ve installed it via npm install connect.
+Consider using the serve-static middleware for serving static files. 
 
 
 
