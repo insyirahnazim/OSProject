@@ -465,6 +465,8 @@ Group: 1000
 3. What port is open for http protocol on the host machine? ***(1 mark)*** 
 __Port 8080 on the host machine is mapped to port 80 inside the Apache HTTP Server container (16af250663fb)__
 
+![alt text](mywebsitelink.png) 
+![alt text](mywebsite.png)
 ## Create SUB Networks
 
 1. In docker, you can create your own private networks where you can run multiple services, in this part, we will create two networks, one called bluenet and the other is rednet
