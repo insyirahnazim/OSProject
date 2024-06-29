@@ -402,14 +402,25 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __Fill answer here__.
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** 
+
+__The files created in the Docker container have the user and group root.
+@nurlyanana ➜ /workspaces/OSProject/myroot (main) $ ls -l /workspaces/OSProject/myroot
+total 0
+-rw-rw-rw- 1 root root 0 Jun 29 02:34 testfile.txt
+@nurlyanana ➜ /workspaces/OSProject/myroot (main) $ ls -l /workspaces/OSProject/myroot/testfile.txt
+-rw-rw-rw- 1 root root 0 Jun 29 02:34 /workspaces/OSProject/myroot/testfile.txt__
+
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
 
-```
-*** __Fill answer here__.***
+    The ownership of the files in the myroot directory on the host virtual machine has been changed to the codespace user and group, as verified by the ls -l command output.
+    __ @nurlyanana ➜ /workspaces/OSProject (main) $ sudo chown -R codespace:codespace /workspaces/OSProject/myroot
+    @nurlyanana ➜ /workspaces/OSProject (main) $ ls -l /workspaces/OSProject/myroot
+    total 0
+    -rw-rw-rw- 1 codespace codespace 0 Jun 29 02:34 testfile.txt.__
 
 ## You are on your own, create your own static webpage
 
