@@ -447,8 +447,23 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 ***Questions:***
 
 1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Fill answer here__.
-2. What port is the apache web server running. ***(1 mark)*** __Fill answer here__.
-3. What port is open for http protocol on the host machine? ***(1 mark)*** __Fill answer here__.
+
+- @nurlyanana ➜ /workspaces/OSProject (main) $ docker ps
+CONTAINER ID   IMAGE     COMMAND              CREATED              STATUS              PORTS                                   NAMES
+16af250663fb   httpd     "httpd-foreground"   About a minute ago   Up About a minute   0.0.0.0:8080->80/tcp, :::8080->80/tcp   nice_chebyshev
+f6385a1e311d   debian    "bash"               44 minutes ago       Up 44 minutes                                               elegant_poitras
+@nurlyanana ➜ /workspaces/OSProject (main) $ docker exec -it 16af250663fb ls -ld /usr/local/apache2/htdocs
+drwxrwxrwx+ 2 1000 1000 4096 Jun 29 03:08 /usr/local/apache2/htdocs
+
+Permissions: drwxrwxrwx+
+User: 1000
+Group: 1000
+
+2. What port is the apache web server running. ***(1 mark)***
+ __The Apache web server inside the container (16af250663fb) is running on port 80__.
+
+3. What port is open for http protocol on the host machine? ***(1 mark)*** 
+__Port 8080 on the host machine is mapped to port 80 inside the Apache HTTP Server container (16af250663fb)__
 
 ## Create SUB Networks
 
